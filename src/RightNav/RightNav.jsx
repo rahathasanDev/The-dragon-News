@@ -19,9 +19,9 @@ const RightNav = () => {
         </ListGroup>
       </div>
       <Qzone></Qzone>
-      <div>
+      {/* <div>
         <img src={bg} alt="" />
-      </div>
+      </div> */}
 
     </div>
   );
