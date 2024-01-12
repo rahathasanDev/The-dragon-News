@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext } from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar, Stack } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaCircleUser } from 'react-icons/fa6';
 import { AuthContext } from '../Providers/AuthProvider';
@@ -15,13 +15,12 @@ const Navigationbar = () => {
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mx-auto">
-              <Nav.Link href="#features">
-                <Link to="/">Home</Link>
-              </Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/career">career</Nav.Link> 
-
+            <Nav className="mx-auto ">
+              <Stack direction="horizontal" gap={3}>
+                <Link className="p-2" to="/">Home</Link>
+                <Link href="/about" to="/about">About</Link>
+                <Link href="/career" to="/career">Career</Link>
+              </Stack>
             </Nav>
             <Nav>
               {user && <Nav.Link href="#deets">

@@ -4,6 +4,8 @@ import Home from "../Components/Pages/Home";
 import Category from "../Category/Category";
 import Newslayout from "../Layout/Newslayout";
 import News from "../Layout/News";
+import About from "../Layout/About";
+import Career from "../Layout/career";
 
 const router = createBrowserRouter(
   [
@@ -11,6 +13,14 @@ const router = createBrowserRouter(
       path: '/',
       element: <Main></Main>,
       children: [
+        {
+          path: '/about',
+          element: <About></About>,
+        },
+        {
+          path: '/career',
+          element: <Career></Career>,
+        },
         {
           path: '/',
           element: <Category></Category>,
