@@ -12,9 +12,9 @@ const Register = () => {
     const name = form.name.value;
     const email = form.email.value;
     const photo = form.photo.value;
-    const password = form.email.value;
+    const password = form.password.value;
 
-    console.log(name, photo, email, password);
+    console.log(name, photo, email,password);
     createUser(email, password)
       .then(result => {
         const createdUser = result.user;
@@ -56,7 +56,7 @@ const Register = () => {
           Register
         </Button>
         <Form.Text className="text-danger p-3">
-          Already Have an account ? <Link to="/register">Login</Link>
+          Already Have an account ? <Link to="/login">Login</Link>
         </Form.Text>
         <br />
 
