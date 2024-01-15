@@ -47,7 +47,7 @@ const router = createBrowserRouter([
       {
         path: ':id',
         element: <Category></Category>,
-        loader: ({ params }) => fetch(`https://the-news-dragon-server-9597l5aab-rahat-hasans-projects-b171547a.vercel.app/categories/${params.id}`)
+        loader: ({ params }) => fetch(`https://the-news-dragon-server-omega-flame.vercel.app/categories/${params.id}`)
 
       }
     ]
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
       {
         path: ':id',
         element: <Privateroutes><News></News></Privateroutes>,
-        loader: ({ params }) => fetch(`https://the-news-dragon-server-9597l5aab-rahat-hasans-projects-b171547a.vercel.app/news/${params.id}`)
+        loader: ({ params }) => fetch(`https://the-news-dragon-server-omega-flame.vercel.app/news/${params.id}`)
       }
     ]
 
