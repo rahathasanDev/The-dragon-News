@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const LeftNav = () => {
   const [categories,setcategories]=useState([]);
   useEffect (()=>{
-    fetch('http://localhost:5000/categories')
+    fetch('https://the-news-dragon-server-9597l5aab-rahat-hasans-projects-b171547a.vercel.app/categories')
     .then(res=>res.json())
     .then(data=>setcategories(data))
     .catch(error=>console.log(error))
