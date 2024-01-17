@@ -23,7 +23,7 @@ const Navigationbar = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto ">
               <Stack direction="horizontal" gap={3}>
-                <Link className="p-2" to="/category/0">Home</Link>
+                <Link className="p-2 " to="/category/0">Home</Link>
                 <Link href="/about" to="/about">About</Link>
                 <Link href="/career" to="/career">Career</Link>
               </Stack>
